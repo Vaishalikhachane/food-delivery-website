@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best online food services india/ online meals.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo/logo.png" alt="my online meal">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">about us</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+            <li class="item"><a href="#">feedback</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary"> Welcome to My Online Meal</h1>
+        <p>"Good marketing makes the company look smart ,Great marketing makes the customer feel smart"</P>
+        <P>Reprehenderit porro doloremque illum consequatur rem
+            cum libero, autem quis nam unde aliqu?</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <hr>
+    <section class="services-container">
+        <h1 class="h-primary center"> Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/bg & cart/1.jpg">
+                <h2 class="h-secondary center">Food ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, adipisci possimus.
+                    Molestiae quialor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias saepe earum
+                    cupiditate,
+                    laborum sed provident molestiae facere explicabo nam, quod architecto delectus. Quibusdam.
+                    illum expedita rem libero nemo nesciunt cupiditate et dolorum provident.</p>
+            </div>
+            <div class="box">
+                <img src="img/bg & cart/2.jpg">
+                <h2 class="h-secondary center">Food catering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, adipisci possimus.
+                    Molestiae quiaiae quialor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias saepe
+                    earum cupiditate,
+                    laborum sed provident molestiae facere expl
+                    illum expedita rem libero nemo nesciunt cupiditate et dolorum provident.</p>
+            </div>
+            <div class="box">
+                <img src="img/logo/logo1.jpg">
+                <h2 class="h-secondary center">Food ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, adipisci possimus.
+                    Molestiae quiaiae quialor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias saepe
+                    earum cupiditate,
+                    laborum sed provident molestiae facere expl
+                    illum expedita rem libero nemo nesciunt cupiditate et dolorum provident.</p>
+            </div>
+
+        </div>
+        <hr>
+
+    </section>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+        <div id="clients">
+            <div class="client-item">
+
+                <img src="img\logo\logo2.png" alt="our client">
+
+            </div>
+            <div class="client-item">
+
+                <img src="img\logo\logo3.png" alt="our client">
+
+            </div>
+            <div class="client-item">
+
+                <img src="img\logo\logo4.jpg" alt="our client">
+
+            </div>
+            <div class="client-item">
+
+                <img src="img\logo\logo5.jpg" alt="our client">
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+    <hr>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="index.php" id="my-form" method="post" onsubmit="return false">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name="name" id="emails" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="massage" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" id="submit" class="btn2"><label for="name">Submit</label>
+                </button>
+        </div>
+        </form>
+        <div id="status" onclick="myfun()" class="success">Details Submitted Successfully...!</div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            copyright &copy; www.MyonlineMeal.com. All rights reserved
+        </div>
+    </footer>
+</body>
+<script>
+    function myfun(){
+        document.getElementById("status").style.display="visible";
+    }
+
+    var form = document.getElementById("my-form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault()
+
+        var name = document.getElementById('name').value
+        console.log(name)
+
+        var email = document.getElementById('emails').value
+        console.log(email)
+
+        var phone = document.getElementById('phone').value
+        console.log(phone)
+
+        var message = document.getElementById('message').value
+        console.log(message)
+
+        
+    })
+
+
+
+</script>
+
+            
+    </HTML>

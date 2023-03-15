@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Author of this code:Pude[#ChildofGod]😇🌹😘🇳🇬
+    Started this code on: 25th of September
+    Ended this code on: 25th of September
+    Published this code on: 25th of September
+    
+    Hey Guys! I am out with another code and this time i have created a house using only CSS. I decided to add a cloud animation too😅. I know the house might not look pretty😅
+    Made with love and care 💞🤗
+    ❌DO NOT COPY OR SAVE THIS CODE WITHOUT MY PERMISSION
+    -->
+    <head>
+        <title>Css House and Cloud</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+              *{
+    box-sizing:border-box ;
+}
+body{
+    
+    background-color:#c2e1fd;
+}
+.sun{
+    background-color:rgba(255,255,0, 0.4);
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.bird{
+    font-size:30px;
+    float:right;
+      animation-name:mov;
+    animation-duration:15s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes mov{
+    0%{
+        margin-right:0px;
+    }
+    25%{
+        margin-top:100px;
+    }
+    50%{
+        margin-bottom:5px;
+    }
+    100%{
+        margin-right:300px;
+    }
+
+}
+#s{
+    box-shadow:0px 2px 6px 4px rgba(255,255,0,0.2);
+}
+#s1{
+    width:80px;
+    height:80px;
+    background-color:rgba(255,255,0.6);
+}
+#s2{
+    width:50px;
+    height:50px;
+    background-color:rgb(255,255,0);
+}
+#b1{
+    transform:translate(-50%);
+     animation-name:moving;
+    animation-duration:15s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes moving{
+    0%{
+        margin-left:0px;
+    }
+    100%{
+        margin-left:300px;
+    }
+}
+.base{
+    background-color:#fff;
+    width:100px;
+    border-radius:50px;
+    height:30px;
+     animation-name:move;
+    animation-duration:8s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+.cloud{
+    width:40px;
+    height:40px;
+    border-radius:50px;
+    position:absolute;
+    background-color:#fff;
+    margin:-20px 0px 0px 10px;
+   
+}
+.cloud:before{
+   content:'';
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    position:absolute;
+    background-color:#fff;
+    margin:-10px 0px 0px 16px;
+}
+.cloud:after{
+    content:'';
+    width:27px;
+    height:27px;
+    border-radius:50px;
+    position:absolute;
+    background-color:#fff;
+    margin:-0px 0px 0px 55px;
+}
+@keyframes move{
+    0%{
+       margin-left:0px;
+       
+    }
+    100%{
+      margin-left:300px;
+      
+    }
+}
+.roof{
+    width:20px;
+    margin:0 auto;
+    height:20px;
+    border-top:60px solid gray;
+    border-bottom: 100px solid black;
+    border-right:100px solid transparent;
+    border-left:100px solid transparent;
+}
+.house-body{
+    width:200px;
+    height:200px;
+    background-color:#eddc9e;
+    margin:0 auto;
+}
+.container{
+    display:flex;
+    width:100px;
+    height:70px;
+     background:transparent;
+     justify-content:center;
+    align-items:flex-end;
+}
+#c1{
+float:right;
+position:relative;
+bottom:70px;
+}
+#c2{
+    margin:0 auto;
+    height:130px;
+    transform:translate(50%);
+}
+.door{
+    width:80px;
+    height:80px;
+    background-color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.door-handle{
+    border-radius:100%;
+    transform:translate(150%);
+    width:15px;
+    height:15px;
+    box-shadow:inset -3px 2px 3px rgba(255,255,255,0.5);}
+          </style>
+    </head>
+    <body>
+    <div class="bird">🕊</div>
+    <div class="sun" id="s">
+        <div class="sun" id="s1">
+             <div class="sun" id="s2"></div>
+        </div>
+    </div>
+    <div class="base">
+            <div class="cloud"></div>
+    </div>
+    <br>
+    <br>
+    <div class="base" id="b1">
+            <div class="cloud"></div>
+    </div>
+        <div class="roof"></div>
+        <div class="house-body">
+        <div class="container">
+            <div class="window"></div>
+            <div class="window"></div>
+            </div>
+               <div class="container" id="c1">
+            <div class="window"></div>
+            <div class="window"></div>
+            </div>
+            <div class="container" id="c2">
+            <div class="door">
+                <div class="door-handle"></div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
